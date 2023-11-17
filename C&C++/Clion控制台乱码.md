@@ -1,0 +1,1 @@
+使用 **ctrl+shift+alt+/** 快捷键把 run.processes.with.pty的选项给关掉

@@ -20,9 +20,9 @@ OAuth 2.0 是一个行业的**标准授权协议**。OAuth 2.0 专注于简化�
 
 
 
-假如我想要在 `coding.net` 这个网站上用 `github.com` 的账号登录。那么 coding 相对于 github 就是一个客户端。而我们用什么操作的呢？浏览器，这就是一个用户代理。当从 github 的授权服务器获得 token 后，coding 是需要请求 github 账号信息的，从哪请求？从 github 的资源服务器。
+假如我想要在 `coding.net` 这个网站上用 `github.com` 的账号登录。那么 coding 相对于 github 就是一个客户端。而我们用什么操作的呢？浏览器，这就是一个用户代理。当从 github 的授权服务器获得 token 后，coding 是需要请求 github 账号信息的，从哪请求？从 github 的资源服务器
 
-![oauth2-roles](.\images\oauth2-roles.jpg)
+![image](./images/oauth2-roles.jpg)
 
 - (A) Client 请求 Resource Owner 的授权。授权请求可以直接向 Resource Owner 请求，也可以通过 Authorization Server 间接的进行。
 - (B) Client 获得授权许可。
@@ -64,8 +64,8 @@ OAuth在"客户端"与"服务提供商"之间，设置了一个授权层（autho
 3. 用户确认授权，客户端（APP）被重定向到注册时给定的 URI，并携带了第三方给定的 code。
 4. 在重定向的过程中，客户端拿到 code 与 `client_id`、`client_secret` 去授权服务器请求令牌，如果成功，直接请求资源服务器获取资源，整个过程，用户代理是不会拿到令牌 token 的。
 5. 客户端（APP）拿到令牌 token 后就可以向第三方的资源服务器请求资源了。
-
-![img](.\images\20180521135707468-1679021492885-4.jpg)
+![image](./images/o)
+![[images/20180521135707468.jpg]]
 
 1. GET请求点击登录，重定向到github的授权端点
 
